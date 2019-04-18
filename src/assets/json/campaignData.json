@@ -1,0 +1,40 @@
+[
+    {
+        "campaignName": "Test WhatsApp",
+        "campaignDate": "2019-04-15",
+        "campaignCountry": [
+            "US"
+        ]
+    },
+    {
+        "campaignName": "Test Facebook",
+        "campaignDate": "2019-04-18",
+        "campaignCountry": [
+            "JP"
+        ]
+    },
+    {
+        "campaignName": "Super Jewels Quest",
+        "campaignDate": "2019-10-15",
+        "campaignCountry": [
+            "CA",
+            "FR"
+        ]
+    },
+    {
+        "campaignName": "Mole Slayer",
+        "campaignDate": "2019-04-12",
+        "campaignCountry": [
+            "FR"
+        ]
+    },
+    {
+        "campaignName": "Mancala Mix",
+        "campaignDate": "2019-10-15",
+        "campaignCountry": [
+            "CA",
+            "FR",
+            "JP"
+        ]
+    }
+]

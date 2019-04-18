@@ -1,0 +1,47 @@
+<p>
+  dashboard works!
+</p>
+
+<div class="container">
+  <h3>Manage Campaigns</h3>
+
+  <div class="btn-group btn-group-justified">
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary" (click)="filterCampaignData('upcoming')">UPCOMING CAMPAIGN</button>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary" (click)="filterCampaignData('live')">LIVE CAMPAIGN</button>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary" (click)="filterCampaignData('past')">PAST CAMPAIGN</button>
+    </div>
+  </div>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>DATE</th>
+        <th>CAMPAIGN</th>
+        <th>VIEW</th>
+        <th>ACTIONS</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let campaign of displayCampaignData">
+        <td>{{campaign.campaignDate}}
+          <div>{{getDateDifference(campaign.campaignDate)}}</div>
+        </td>
+        <td>{{campaign.campaignName}}
+          <div>
+            <span *ngFor="let country of campaign.campaignCountry;">{{country}}</span>
+          </div>
+        </td>
+        <td>View <br> Pricing</td>
+        <td>CSV</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+</div>
